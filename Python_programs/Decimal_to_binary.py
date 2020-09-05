@@ -1,0 +1,9 @@
+dn = int(input("Enter a decimal number: "))
+bn = 0
+i = 0
+while(dn != 0):
+    r = dn%2 #if ocal 2 is replaced by 8 and if hexa 2 is replaced by 16
+    bn = bn + r*(10**i)
+    dn = dn//2 #if ocal 2 is replaced by 8 and if hexa 2 is replaced by 16
+    i += 1
+print("The binary equivlent = ",bn)
